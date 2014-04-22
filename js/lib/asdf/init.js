@@ -4,9 +4,13 @@ TODO:
 
 */
 
-require(['pubsub'], function (pubsub){
-	console.log("require is here!");
+require(
+	[	
+		'polyfills',
+		'modules/pubsub',
+		'modules/asdf-module',
+		'modules/data-bind-module'
+	], function (polyfill, ps, ASDF, dataBind){
 
-	// establish asdf global variable
-	window.asdf = { snark: "snarky"};
+	window.asdf = new ASDF();
 });

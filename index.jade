@@ -5,7 +5,20 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		title= "ASDF-R"
 		link(rel="stylesheet", href="css/style.css")
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 		script(data-main="js/lib/asdf/init", src="js/lib/require.js")
 	body
 		h1 ASDF-R
+			span This is a test
+		#testID1
+		#testID2
+			.nestedClass1.secondClass
+			.nestedClass1
+				.nestedClass2
+		.testClass1
+		.testClass2
+			#testID3
+		.testClass3.addedClass1
+		.here.there
+		.here.where
 		script(src="js/main.js")
